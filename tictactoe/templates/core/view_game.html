@@ -19,7 +19,7 @@
 {% block content %}
     {% load custom_filters %}
     <script type="text/javascript">
-        var create_move_url = "{% url create_move game.id %}";
+        var create_move_url = "{% url 'create_move' game.id %}";
         var player = "{{ player }}";
         var current_player = "{{ current_player }}";
         var winner = "{{ board.get_winner }}";

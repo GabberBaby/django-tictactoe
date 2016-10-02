@@ -14,6 +14,7 @@
     {% if user.is_authenticated %}
         <script type="text/javascript">
             var user_id = {{ request.user.id }};
+            var nickname = "{{ request.user.username }}";
         </script>
     {% endif %}
 </head>
@@ -22,9 +23,9 @@
         <nav id="user-nav">
                 <div id="user-status">
                     {% if user.is_authenticated %}
-                    Welcome, {{ user }} (<a href="{% url logout %}">Logout</a>)
+                    Welcome, {{ user }} (<a href="{% url 'logout' %}">Logout</a>)
                     {% else %}
-                        <a href="{% url login %}">Log in</a>
+                        <a href="{% url 'login' %}">Log in</a>
                     {% endif %}
                 </div>
                 <h1><a href="/">TicTacToe</a></h1>

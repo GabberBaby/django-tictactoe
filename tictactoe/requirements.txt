@@ -1,0 +1,11 @@
+cent==2.0.1
+Django==1.7
+django-registration==2.1.2
+gevent==1.1b4
+gevent-socketio==0.3.6
+gevent-websocket==0.9.5
+greenlet==0.4.10
+redis==2.10.5
+requests==2.11.0
+simplejson==3.8.2
+six==1.10.0

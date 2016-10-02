@@ -1,0 +1,10 @@
+<label for="gamename">
+                <select>
+                    {% for x,y in form.fields.gamename.choices %}
+                    <option value="{{ y }}">
+                        {{ y }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </label>
+            <label for="username">{{ form.username.lable }}:</label>

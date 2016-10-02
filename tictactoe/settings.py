@@ -129,7 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'registration',
-    'core',
+    'apps.game',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -159,7 +159,10 @@ LOGGING = {
     }
 }
 
-try:
-        from local_settings import *
-except:
-        pass
+
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+# REDIS_PORT = 9000
+REDIS_DB = 0
