@@ -11,4 +11,6 @@ Run:
 
 >python run.py runserver 127.0.0.1:8000
 
-
+Screenshot:
+================
+![alt tag](https://github.com/GabberBaby/django-tictactoe/blob/master/screenshot.png)
